@@ -1,6 +1,14 @@
+//
+//  ThemeTests.swift
+//  Themes
+//
+//  Created by Khoa Pham on 20/05/2017.
+//  Copyright © 2017 Khoa Pham. All rights reserved.
+//
+
 import XCTest
 
-class macOSTests: XCTestCase {
+class ThemeTests: XCTestCase {
 
   override func setUp() {
     super.setUp()
