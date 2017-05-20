@@ -13,10 +13,10 @@ class ThemeTests: XCTestCase {
     Manager.theme = MyTheme()
 
     let label = UILabel()
-    label.theme(MyTheme.self) { label, theme in
-      label.textColor = theme.color
-      label.font = theme.font
-      label.text = theme.placeholder
+    label.theme(MyTheme.self) {
+      $0.textColor = $1.color
+      $0.font = $1.font
+      $0.text = $1.placeholder
     }
 
     XCTAssertEqual(label.text, "placeholder")
