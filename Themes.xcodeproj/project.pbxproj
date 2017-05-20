@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D229982A1ED097B000D3B7BD /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22998291ED097B000D3B7BD /* Themes.swift */; };
-		D229982B1ED097B000D3B7BD /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22998291ED097B000D3B7BD /* Themes.swift */; };
+		D229982A1ED097B000D3B7BD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22998291ED097B000D3B7BD /* Theme.swift */; };
+		D229982B1ED097B000D3B7BD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22998291ED097B000D3B7BD /* Theme.swift */; };
 		D229982D1ED097C300D3B7BD /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229982C1ED097C300D3B7BD /* ThemeTests.swift */; };
 		D229982E1ED097C300D3B7BD /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229982C1ED097C300D3B7BD /* ThemeTests.swift */; };
+		D22998301ED0986100D3B7BD /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229982F1ED0986100D3B7BD /* Themable.swift */; };
+		D22998311ED0986100D3B7BD /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229982F1ED0986100D3B7BD /* Themable.swift */; };
+		D22998331ED098A500D3B7BD /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22998321ED098A500D3B7BD /* Manager.swift */; };
+		D22998341ED098A500D3B7BD /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22998321ED098A500D3B7BD /* Manager.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Themes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Themes.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* Themes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Themes.framework */; };
 /* End PBXBuildFile section */
@@ -33,8 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D22998291ED097B000D3B7BD /* Themes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		D22998291ED097B000D3B7BD /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D229982C1ED097C300D3B7BD /* ThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
+		D229982F1ED0986100D3B7BD /* Themable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Themable.swift; sourceTree = "<group>"; };
+		D22998321ED098A500D3B7BD /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Themes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Themes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +122,9 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D22998291ED097B000D3B7BD /* Themes.swift */,
+				D22998291ED097B000D3B7BD /* Theme.swift */,
+				D229982F1ED0986100D3B7BD /* Themable.swift */,
+				D22998321ED098A500D3B7BD /* Manager.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -307,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D229982A1ED097B000D3B7BD /* Themes.swift in Sources */,
+				D229982A1ED097B000D3B7BD /* Theme.swift in Sources */,
+				D22998331ED098A500D3B7BD /* Manager.swift in Sources */,
+				D22998301ED0986100D3B7BD /* Themable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D229982B1ED097B000D3B7BD /* Themes.swift in Sources */,
+				D229982B1ED097B000D3B7BD /* Theme.swift in Sources */,
+				D22998341ED098A500D3B7BD /* Manager.swift in Sources */,
+				D22998311ED0986100D3B7BD /* Themable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
