@@ -3,22 +3,51 @@ import XCTest
 
 class ThemeTests: XCTestCase {
 
-  class MyTheme: Theme {
-    let color = UIColor.red
-    let font = UIFont.systemFont(ofSize: 12)
-    let placeholder = "placeholder"
+  struct MyTheme: Theme {
+    let color: UIColor
+    let font: UIFont
+    let placeholder: String
   }
 
-  func testExample() {
-    Manager.theme = MyTheme()
+  struct OtherTheme: Theme {
 
-    let label = UILabel()
-    label.theme(MyTheme.self) {
+  }
+
+  func testTheme() {
+    let theme1 = MyTheme(color: .red, font: .systemFont(ofSize: 12), placeholder: "theme 1")
+    let theme2 = MyTheme(color: .green, font: .systemFont(ofSize: 10), placeholder: "theme 2")
+
+    // theme 1
+    Manager.theme = theme1
+
+    let textField = UITextField()
+
+    textField.theme(MyTheme.self) {
       $0.textColor = $1.color
       $0.font = $1.font
-      $0.text = $1.placeholder
+      $0.placeholder = $1.placeholder
     }
 
-    XCTAssertEqual(label.text, "placeholder")
+    // init with theme 1 immediately
+    XCTAssertEqual(textField.textColor, UIColor.red)
+    XCTAssertEqual(textField.font, UIFont.systemFont(ofSize: 12))
+    XCTAssertEqual(textField.placeholder, "theme 1")
+
+    // theme 2
+    Manager.theme = theme2
+
+    // change to theme 2
+    XCTAssertEqual(textField.textColor, UIColor.green)
+    XCTAssertEqual(textField.font, UIFont.systemFont(ofSize: 10))
+    XCTAssertEqual(textField.placeholder, "theme 2")
+
+    // other theme
+
+    Manager.theme = OtherTheme()
+
+    // textField is unchanged
+    XCTAssertEqual(textField.textColor, UIColor.green)
+    XCTAssertEqual(textField.font, UIFont.systemFont(ofSize: 10))
+    XCTAssertEqual(textField.placeholder, "theme 2")
   }
 }
