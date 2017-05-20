@@ -1,11 +1,24 @@
 import Foundation
 
-/// Conform to ThemeUser and use `theme` to apply the theme
+/// Anything that wants to use theme
 public protocol ThemeUser: class {}
 
 public extension ThemeUser {
 
-  /// Specify the theme you want o use
+  /// Specify the theme you want to use.
+  /// This is called immediately and when current theme changes
+  ///
+  /// Usage
+  /// ```
+  /// textField.theme(MyTheme.self) {
+  ///   $0.textColor = $1.mainColor
+  ///   $0.font = $1.textFont
+  /// }
+  /// ```
+  ///
+  /// - Parameters:
+  ///   - type: The type of your own theme
+  ///   - apply: the function that gets called with (ThemeUser, Theme)
   func theme<T: Theme>(_ type: T.Type, apply: @escaping (Self, T) -> Void) {
     if let theme = Manager.theme as? T {
       apply(self, theme)
@@ -39,8 +52,4 @@ extension NSObject: ThemeUser {}
 
 // MARK: - Associated Object
 
-fileprivate struct AssociatedKeys {
-  static var key = "handler"
-}
-
-fileprivate var key = "handler"
+fileprivate var key = "theme_handler"
