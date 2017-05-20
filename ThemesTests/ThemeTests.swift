@@ -13,6 +13,11 @@ class ThemeTests: XCTestCase {
 
   }
 
+  func testKey() {
+    XCTAssertEqual(String(describing: MyTheme.self), "MyTheme")
+    XCTAssertEqual(String(describing: OtherTheme.self), "OtherTheme")
+  }
+
   func testTheme() {
     let theme1 = MyTheme(color: .red, font: .systemFont(ofSize: 12), placeholder: "theme 1")
     let theme2 = MyTheme(color: .green, font: .systemFont(ofSize: 10), placeholder: "theme 2")
