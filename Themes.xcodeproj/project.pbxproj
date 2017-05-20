@@ -10,9 +10,8 @@
 		D229982A1ED097B000D3B7BD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22998291ED097B000D3B7BD /* Theme.swift */; };
 		D229982B1ED097B000D3B7BD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22998291ED097B000D3B7BD /* Theme.swift */; };
 		D229982D1ED097C300D3B7BD /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229982C1ED097C300D3B7BD /* ThemeTests.swift */; };
-		D229982E1ED097C300D3B7BD /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229982C1ED097C300D3B7BD /* ThemeTests.swift */; };
-		D22998301ED0986100D3B7BD /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229982F1ED0986100D3B7BD /* Themable.swift */; };
-		D22998311ED0986100D3B7BD /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229982F1ED0986100D3B7BD /* Themable.swift */; };
+		D22998301ED0986100D3B7BD /* ThemeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229982F1ED0986100D3B7BD /* ThemeUser.swift */; };
+		D22998311ED0986100D3B7BD /* ThemeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229982F1ED0986100D3B7BD /* ThemeUser.swift */; };
 		D22998331ED098A500D3B7BD /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22998321ED098A500D3B7BD /* Manager.swift */; };
 		D22998341ED098A500D3B7BD /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22998321ED098A500D3B7BD /* Manager.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Themes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Themes.framework */; };
@@ -39,7 +38,7 @@
 /* Begin PBXFileReference section */
 		D22998291ED097B000D3B7BD /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D229982C1ED097C300D3B7BD /* ThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
-		D229982F1ED0986100D3B7BD /* Themable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Themable.swift; sourceTree = "<group>"; };
+		D229982F1ED0986100D3B7BD /* ThemeUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeUser.swift; sourceTree = "<group>"; };
 		D22998321ED098A500D3B7BD /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
@@ -123,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D22998291ED097B000D3B7BD /* Theme.swift */,
-				D229982F1ED0986100D3B7BD /* Themable.swift */,
+				D229982F1ED0986100D3B7BD /* ThemeUser.swift */,
 				D22998321ED098A500D3B7BD /* Manager.swift */,
 			);
 			path = Sources;
@@ -238,7 +237,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Khoa Pham";
 				TargetAttributes = {
 					D5B2E89E1C3A780C00C0327D = {
@@ -317,7 +316,7 @@
 			files = (
 				D229982A1ED097B000D3B7BD /* Theme.swift in Sources */,
 				D22998331ED098A500D3B7BD /* Manager.swift in Sources */,
-				D22998301ED0986100D3B7BD /* Themable.swift in Sources */,
+				D22998301ED0986100D3B7BD /* ThemeUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +334,7 @@
 			files = (
 				D229982B1ED097B000D3B7BD /* Theme.swift in Sources */,
 				D22998341ED098A500D3B7BD /* Manager.swift in Sources */,
-				D22998311ED0986100D3B7BD /* Themable.swift in Sources */,
+				D22998311ED0986100D3B7BD /* ThemeUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +342,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D229982E1ED097C300D3B7BD /* ThemeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,8 +374,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -425,8 +425,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -446,6 +448,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -458,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -478,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
