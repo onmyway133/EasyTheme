@@ -2,10 +2,39 @@ import UIKit
 import Themes
 import Imaginary
 import On
+import Hue
+
+struct MyTheme: Theme {
+  let navigationBarImageUrl: String
+  let cellColor: UIColor
+  let backgroundColor: UIColor
+  let title: String
+  let font: UIFont
+}
 
 class ListController: UITableViewController {
 
   let items = ItemFactory.make()
+  let dayTheme = MyTheme(navigationBarImageUrl: "",
+                         cellColor: UIColor(hex: ""),
+                         backgroundColor: UIColor(hex: ""),
+                         title: "",
+                         font: UIFont.systemFont(ofSize: 12))
+  let nightTheme = MyTheme(navigationBarImageUrl: "",
+                         cellColor: UIColor(hex: ""),
+                         backgroundColor: UIColor(hex: ""),
+                         title: "",
+                         font: UIFont.systemFont(ofSize: 12))
+  let unicornTheme = MyTheme(navigationBarImageUrl: "",
+                         cellColor: UIColor(hex: ""),
+                         backgroundColor: UIColor(hex: ""),
+                         title: "",
+                         font: UIFont.systemFont(ofSize: 12))
+  let starwarTheme = MyTheme(navigationBarImageUrl: "",
+                         cellColor: UIColor(hex: ""),
+                         backgroundColor: UIColor(hex: ""),
+                         title: "",
+                         font: UIFont.systemFont(ofSize: 12))
 
   override func viewDidLoad() {
     super.viewDidLoad()

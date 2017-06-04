@@ -34,5 +34,10 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+  <key>UIAppFonts</key>
+  <array>
+    <string>Starjedi.ttf</string>
+    <string>Unicorn.ttf</string>
+  </array>
 </dict>
 </plist>
