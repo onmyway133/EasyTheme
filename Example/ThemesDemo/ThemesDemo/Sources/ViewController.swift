@@ -48,6 +48,22 @@ class ListController: UITableViewController {
 
     navigationItem.leftBarButtonItems = [day, night]
     navigationItem.rightBarButtonItems = [unicorn, starwar]
+
+    day.on.tap {
+      Manager.theme = self.dayTheme
+    }
+
+    night.on.tap {
+      Manager.theme = self.nightTheme
+    }
+
+    unicorn.on.tap {
+      Manager.theme = self.unicornTheme
+    }
+
+    starwar.on.tap {
+      Manager.theme = self.starwarTheme
+    }
   }
 
   override func viewWillAppear(_ animated: Bool) {
