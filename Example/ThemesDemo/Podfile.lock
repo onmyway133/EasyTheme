@@ -1,5 +1,5 @@
 PODS:
-  - Themes (0.1.0)
+  - Themes (1.0.0)
 
 DEPENDENCIES:
   - Themes (from `../../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  Themes: 8b086bc991f74268f6cf372569b7eb134dcb5b42
+  Themes: 0846b95552a1ac87cb1e47eb0b0efe240fc43b00
 
 PODFILE CHECKSUM: 6e8f4a42b9c0351551ea474e5be8041c659ab703
 
