@@ -5,42 +5,60 @@ import On
 import Hue
 
 struct MyTheme: Theme {
-  let navigationBarImageUrl: String
+  let topImage: UIImage
   let cellColor: UIColor
   let backgroundColor: UIColor
-  let title: String
-  let font: UIFont
+  let name: String
+  let titleFont: UIFont
+  let subtitleFont: UIFont
 }
 
 class ListController: UITableViewController {
 
   let items = ItemFactory.make()
-  let dayTheme = MyTheme(navigationBarImageUrl: "",
+  let dayTheme = MyTheme(topImage: UIImage(named: "day")!,
                          cellColor: UIColor(hex: ""),
                          backgroundColor: UIColor(hex: ""),
-                         title: "",
-                         font: UIFont.systemFont(ofSize: 12))
-  let nightTheme = MyTheme(navigationBarImageUrl: "",
+                         name: "Day",
+                         titleFont: UIFont.preferredFont(forTextStyle: .title1),
+                         subtitleFont: UIFont.preferredFont(forTextStyle: .body))
+  let nightTheme = MyTheme(topImage: UIImage(named: "night")!,
                          cellColor: UIColor(hex: ""),
                          backgroundColor: UIColor(hex: ""),
-                         title: "",
-                         font: UIFont.systemFont(ofSize: 12))
-  let unicornTheme = MyTheme(navigationBarImageUrl: "",
+                         name: "Night",
+                         titleFont: UIFont.preferredFont(forTextStyle: .title1),
+                         subtitleFont: UIFont.preferredFont(forTextStyle: .body))
+  let unicornTheme = MyTheme(topImage: UIImage(named: "unicorn")!,
                          cellColor: UIColor(hex: ""),
                          backgroundColor: UIColor(hex: ""),
-                         title: "",
-                         font: UIFont.systemFont(ofSize: 12))
-  let starwarTheme = MyTheme(navigationBarImageUrl: "",
+                         name: "Unicorn",
+                         titleFont: UIFont(name: "Unicorns are Awesome", size: 35)!,
+                         subtitleFont: UIFont(name: "Unicorns are Awesome", size: 24)!)
+  let starwarTheme = MyTheme(topImage: UIImage(named: "starwar")!,
                          cellColor: UIColor(hex: ""),
                          backgroundColor: UIColor(hex: ""),
-                         title: "",
-                         font: UIFont.systemFont(ofSize: 12))
+                         name: "Stawar",
+                         titleFont: UIFont(name: "Star Jedi", size: 14)!,
+                         subtitleFont: UIFont(name: "Star Jedi", size: 12)!)
 
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = UIColor.white
     tableView.separatorStyle = .none
 
+    setupNavigationItems()
+
+    // default theme
+    Manager.theme = dayTheme
+
+    theme(MyTheme.self) {
+      $0.title = $1.name
+      $0.tableView.backgroundColor = $1.backgroundColor
+      $0.navigationController?.navigationBar.setBackgroundImage($1.topImage, for: .default)
+    }
+  }
+
+  func setupNavigationItems() {
     let day = UIBarButtonItem(title: "🌞", style: .plain, target: nil, action: nil)
     let night = UIBarButtonItem(title: "🌙", style: .plain, target: nil, action: nil)
     let unicorn = UIBarButtonItem(title: "🦄", style: .plain, target: nil, action: nil)

@@ -1,5 +1,6 @@
 import UIKit
 import Hue
+import Themes
 
 class Cell: UITableViewCell {
   @IBOutlet weak var container: UIView!
@@ -14,9 +15,14 @@ class Cell: UITableViewCell {
     myImageView.layer.masksToBounds = true
 
     container.layer.cornerRadius = 10
-    container.backgroundColor = UIColor(hex: "#27ae60")
     container.layer.shadowColor = UIColor.black.cgColor
     container.layer.shadowOpacity = 0
     container.layer.shadowOffset = CGSize(width: 1, height: 1)
+
+    theme(MyTheme.self) {
+      $0.myTitleLabel.font = $1.titleFont
+      $0.mySubtitleLabel.font = $1.subtitleFont
+      $0.container.backgroundColor = $1.cellColor
+    }
   }
 }

@@ -36,13 +36,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUH-65-GNV">
-                                                    <rect key="frame" x="93.5" y="10" width="253.5" height="34"/>
+                                                    <rect key="frame" x="93.5" y="14" width="253.5" height="34"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4I-A9-kxU">
-                                                    <rect key="frame" x="93.5" y="50" width="253.5" height="21"/>
+                                                    <rect key="frame" x="93.5" y="54" width="253.5" height="21"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                                                 <constraint firstItem="IUH-65-GNV" firstAttribute="leading" secondItem="WHr-XD-xds" secondAttribute="trailing" constant="8" id="Xsw-3a-fjy"/>
                                                 <constraint firstItem="IUH-65-GNV" firstAttribute="leading" secondItem="M4I-A9-kxU" secondAttribute="leading" id="bLd-KH-Z0o"/>
                                                 <constraint firstAttribute="bottom" secondItem="WHr-XD-xds" secondAttribute="bottom" constant="6" id="byt-bX-qEu"/>
-                                                <constraint firstItem="IUH-65-GNV" firstAttribute="top" secondItem="Fir-jA-As0" secondAttribute="top" constant="10" id="fVx-0P-cJ1"/>
+                                                <constraint firstItem="IUH-65-GNV" firstAttribute="top" secondItem="Fir-jA-As0" secondAttribute="top" constant="14" id="fVx-0P-cJ1"/>
                                                 <constraint firstItem="IUH-65-GNV" firstAttribute="trailing" secondItem="M4I-A9-kxU" secondAttribute="trailing" id="vQW-5a-DP6"/>
                                             </constraints>
                                         </view>
@@ -93,7 +93,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lKe-EG-yJT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qxj-IX-fu3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Qxj-IX-fu3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
