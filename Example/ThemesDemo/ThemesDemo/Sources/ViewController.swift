@@ -35,8 +35,8 @@ class ListController: UITableViewController {
                          titleFont: UIFont(name: "Unicorns are Awesome", size: 35)!,
                          subtitleFont: UIFont(name: "Unicorns are Awesome", size: 24)!)
   let starwarTheme = MyTheme(topImage: UIImage(named: "starwar")!,
-                         cellColor: UIColor(hex: "#8e44ad"),
-                         backgroundColor: UIColor(hex: "#E9D460"),
+                         cellColor: UIColor(hex: "#D91E18"),
+                         backgroundColor: UIColor(hex: "#22A7F0"),
                          name: "Stawar",
                          titleFont: UIFont(name: "Star Jedi", size: 14)!,
                          subtitleFont: UIFont(name: "Star Jedi", size: 12)!)
@@ -55,6 +55,8 @@ class ListController: UITableViewController {
       $0.title = $1.name
       $0.tableView.backgroundColor = $1.backgroundColor
       $0.navigationController?.navigationBar.setBackgroundImage($1.topImage, for: .default)
+      $0.tableView.rowHeight = $1.name == "Unicorn" ? 180 : 120
+      $0.tableView.reloadData()
     }
   }
 
