@@ -17,26 +17,26 @@ class ListController: UITableViewController {
 
   let items = ItemFactory.make()
   let dayTheme = MyTheme(topImage: UIImage(named: "day")!,
-                         cellColor: UIColor(hex: ""),
-                         backgroundColor: UIColor(hex: ""),
+                         cellColor: UIColor(hex: "#3498db"),
+                         backgroundColor: UIColor(hex: "ECF0F1"),
                          name: "Day",
                          titleFont: UIFont.preferredFont(forTextStyle: .title1),
                          subtitleFont: UIFont.preferredFont(forTextStyle: .body))
   let nightTheme = MyTheme(topImage: UIImage(named: "night")!,
-                         cellColor: UIColor(hex: ""),
-                         backgroundColor: UIColor(hex: ""),
+                         cellColor: UIColor(hex: "#34495e"),
+                         backgroundColor: UIColor(hex: "6C7A89"),
                          name: "Night",
                          titleFont: UIFont.preferredFont(forTextStyle: .title1),
                          subtitleFont: UIFont.preferredFont(forTextStyle: .body))
   let unicornTheme = MyTheme(topImage: UIImage(named: "unicorn")!,
-                         cellColor: UIColor(hex: ""),
-                         backgroundColor: UIColor(hex: ""),
+                         cellColor: UIColor(hex: "DB0A5B"),
+                         backgroundColor: UIColor(hex: "f39c12"),
                          name: "Unicorn",
                          titleFont: UIFont(name: "Unicorns are Awesome", size: 35)!,
                          subtitleFont: UIFont(name: "Unicorns are Awesome", size: 24)!)
   let starwarTheme = MyTheme(topImage: UIImage(named: "starwar")!,
-                         cellColor: UIColor(hex: ""),
-                         backgroundColor: UIColor(hex: ""),
+                         cellColor: UIColor(hex: "#8e44ad"),
+                         backgroundColor: UIColor(hex: "#E9D460"),
                          name: "Stawar",
                          titleFont: UIFont(name: "Star Jedi", size: 14)!,
                          subtitleFont: UIFont(name: "Star Jedi", size: 12)!)
@@ -65,7 +65,7 @@ class ListController: UITableViewController {
     let starwar = UIBarButtonItem(title: "⭐️", style: .plain, target: nil, action: nil)
 
     navigationItem.leftBarButtonItems = [day, night]
-    navigationItem.rightBarButtonItems = [unicorn, starwar]
+    navigationItem.rightBarButtonItems = [starwar, unicorn]
 
     day.on.tap {
       Manager.theme = self.dayTheme
