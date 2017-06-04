@@ -6,5 +6,6 @@ target 'ThemesDemo' do
  pod 'Themes', path: '../../'
  pod 'Imaginary'
  pod 'Hue'
+ pod 'On', :git => 'https://github.com/onmyway133/On'
 end
 

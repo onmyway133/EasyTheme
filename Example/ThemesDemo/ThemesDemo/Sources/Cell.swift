@@ -11,8 +11,9 @@ class Cell: UITableViewCell {
     super.awakeFromNib()
 
     myImageView.layer.cornerRadius = 5
+    myImageView.layer.masksToBounds = true
 
-    container.layer.cornerRadius = 5
+    container.layer.cornerRadius = 10
     container.backgroundColor = UIColor(hex: "#27ae60")
     container.layer.shadowColor = UIColor.black.cgColor
     container.layer.shadowOpacity = 0
