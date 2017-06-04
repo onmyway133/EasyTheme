@@ -1,7 +1,13 @@
 PODS:
+  - Cache (2.3.0):
+    - CryptoSwift
+  - CryptoSwift (0.6.9)
+  - Imaginary (1.0.2):
+    - Cache (~> 2.0)
   - Themes (1.0.0)
 
 DEPENDENCIES:
+  - Imaginary
   - Themes (from `../../`)
 
 EXTERNAL SOURCES:
@@ -9,8 +15,11 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
+  Cache: 077e4e799c394ccffc18bb3240f5b55cb9b3cc1b
+  CryptoSwift: a22f6ba238e9ce4d26ee7bf45b9ed82e7122d4a0
+  Imaginary: b4f4c069ad23b53243058a040a531e099aee8a1f
   Themes: 0846b95552a1ac87cb1e47eb0b0efe240fc43b00
 
-PODFILE CHECKSUM: 6e8f4a42b9c0351551ea474e5be8041c659ab703
+PODFILE CHECKSUM: 38e30aecb1d43928eb7946b04e1b57b0adf560e5
 
 COCOAPODS: 1.2.1
