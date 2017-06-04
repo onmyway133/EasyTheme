@@ -1,6 +1,7 @@
 import UIKit
 import Themes
 import Imaginary
+import On
 
 class ListController: UITableViewController {
 
@@ -9,8 +10,15 @@ class ListController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = UIColor.white
-
     tableView.separatorStyle = .none
+
+    let day = UIBarButtonItem(title: "🌞", style: .plain, target: nil, action: nil)
+    let night = UIBarButtonItem(title: "🌙", style: .plain, target: nil, action: nil)
+    let unicorn = UIBarButtonItem(title: "🦄", style: .plain, target: nil, action: nil)
+    let starwar = UIBarButtonItem(title: "⭐️", style: .plain, target: nil, action: nil)
+
+    navigationItem.leftBarButtonItems = [day, night]
+    navigationItem.rightBarButtonItems = [unicorn, starwar]
   }
 
   override func viewWillAppear(_ animated: Bool) {
