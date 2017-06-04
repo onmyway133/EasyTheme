@@ -35,8 +35,8 @@ class ListController: UITableViewController {
                          titleFont: UIFont(name: "Unicorns are Awesome", size: 35)!,
                          subtitleFont: UIFont(name: "Unicorns are Awesome", size: 24)!)
   let starwarTheme = MyTheme(topImage: UIImage(named: "starwar")!,
-                         cellColor: UIColor(hex: "#D91E18"),
-                         backgroundColor: UIColor(hex: "#22A7F0"),
+                         cellColor: UIColor(hex: "#E5D61D"),
+                         backgroundColor: UIColor(hex: "#000000"),
                          name: "Stawar",
                          titleFont: UIFont(name: "Star Jedi", size: 14)!,
                          subtitleFont: UIFont(name: "Star Jedi", size: 12)!)
