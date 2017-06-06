@@ -82,7 +82,6 @@ You can do this wherever you like. It is set using the current theme, and whenev
 
 ```swift
 // ViewController.swift
-
 override func viewDidLoad() {
   super.viewDidLoad()
 
