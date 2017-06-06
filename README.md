@@ -36,7 +36,7 @@ Usually, you have a finite number of colors and fonts in an app. You can have ma
 
 ### Step 1: Create a theme
 
-Create your theme by conforming to `Theme`, which is just a marker protocol. You can declare whatever you like, including nested objects, all depending on your need. You can also create many themes as you like
+Create your theme by conforming to `Theme`, which is just a marker protocol. You can declare whatever you like, including nested objects, all depending on your need. You can also create as many themes as you like
 
 ```swift
 struct MyTheme: Theme {
@@ -116,7 +116,7 @@ override func awakeFromNib() {
 
 ```
 
-## Step 4: Change the theme
+### Step 4: Change the theme
 
 Change the current theme is as easy as assigning a new theme. All happens in real time and very fast
 
