@@ -92,11 +92,6 @@ override func viewDidLoad() {
     $0.navigationController?.navigationBar.setBackgroundImage($1.topImage, for: .default)
     $0.tableView.rowHeight = $1.name == "Unicorn" ? 180 : 120
     $0.tableView.reloadData()
-
-    self.confettiView.startAnimating()
-    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { 
-      self.confettiView.stopAnimating()
-    })
   }
 }
 
