@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C42D5E06F374F4A1849C988E /* Pods_ThemesDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F540F642D392C73F937FB4 /* Pods_ThemesDemo.framework */; };
 		D26EA3E41EE4665700C41EB2 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26EA3E31EE4665700C41EB2 /* Cell.swift */; };
 		D26EA3E61EE4666C00C41EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26EA3E51EE4666C00C41EB2 /* Main.storyboard */; };
 		D26EA3E81EE467D800C41EB2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26EA3E71EE467D800C41EB2 /* Item.swift */; };
@@ -17,12 +18,12 @@
 		D5C7F75B1C3BCA1E008CDDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */; };
 		D5C7F75C1C3BCA1E008CDDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */; };
 		D5C7F75D1C3BCA1E008CDDBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */; };
-		D905D1D166184AD342BE78AD /* Pods_ThemesDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDBB72E12EF1850746F3EEA /* Pods_ThemesDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		211CFEAD13E3E903A1DAE243 /* Pods-ThemesDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThemesDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThemesDemo/Pods-ThemesDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		BE842FAEBA543464E0CAF4A1 /* Pods-ThemesDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThemesDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThemesDemo/Pods-ThemesDemo.release.xcconfig"; sourceTree = "<group>"; };
+		54465F15B8C3BABD3123C6A4 /* Pods-ThemesDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThemesDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThemesDemo/Pods-ThemesDemo.release.xcconfig"; sourceTree = "<group>"; };
+		67F540F642D392C73F937FB4 /* Pods_ThemesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThemesDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B079031E3685637A94C222F2 /* Pods-ThemesDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThemesDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThemesDemo/Pods-ThemesDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D26EA3E31EE4665700C41EB2 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		D26EA3E51EE4666C00C41EB2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D26EA3E71EE467D800C41EB2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DDDBB72E12EF1850746F3EEA /* Pods_ThemesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThemesDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,26 +43,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D905D1D166184AD342BE78AD /* Pods_ThemesDemo.framework in Frameworks */,
+				C42D5E06F374F4A1849C988E /* Pods_ThemesDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22C10EDEC70EF905F100D447 /* Frameworks */ = {
+		A54033049A8E171BDC2A5781 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DDDBB72E12EF1850746F3EEA /* Pods_ThemesDemo.framework */,
+				67F540F642D392C73F937FB4 /* Pods_ThemesDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BB793E2060405059E5B1DB36 /* Pods */ = {
+		B92C834726A0C5BFF450A5CC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				211CFEAD13E3E903A1DAE243 /* Pods-ThemesDemo.debug.xcconfig */,
-				BE842FAEBA543464E0CAF4A1 /* Pods-ThemesDemo.release.xcconfig */,
+				B079031E3685637A94C222F2 /* Pods-ThemesDemo.debug.xcconfig */,
+				54465F15B8C3BABD3123C6A4 /* Pods-ThemesDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -72,8 +72,8 @@
 			children = (
 				D5C7F7421C3BC9CE008CDDBA /* ThemesDemo */,
 				D5C7F7411C3BC9CE008CDDBA /* Products */,
-				BB793E2060405059E5B1DB36 /* Pods */,
-				22C10EDEC70EF905F100D447 /* Frameworks */,
+				B92C834726A0C5BFF450A5CC /* Pods */,
+				A54033049A8E171BDC2A5781 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,12 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5C7F7521C3BC9CE008CDDBA /* Build configuration list for PBXNativeTarget "ThemesDemo" */;
 			buildPhases = (
-				AAB7E1111EE1FDDCBBB57459 /* [CP] Check Pods Manifest.lock */,
+				DF10BE754E219ED15D1BC138 /* [CP] Check Pods Manifest.lock */,
 				D5C7F73C1C3BC9CE008CDDBA /* Sources */,
 				D5C7F73D1C3BC9CE008CDDBA /* Frameworks */,
 				D5C7F73E1C3BC9CE008CDDBA /* Resources */,
-				DB95C72E63E22727382E1831 /* [CP] Embed Pods Frameworks */,
-				B319B7B10E6B4123C33FD614 /* [CP] Copy Pods Resources */,
+				3EE0615DD585D454AB80135D /* [CP] Embed Pods Frameworks */,
+				E979EBD339E3BDE843053D1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,7 +200,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AAB7E1111EE1FDDCBBB57459 /* [CP] Check Pods Manifest.lock */ = {
+		3EE0615DD585D454AB80135D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThemesDemo/Pods-ThemesDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF10BE754E219ED15D1BC138 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,7 +230,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B319B7B10E6B4123C33FD614 /* [CP] Copy Pods Resources */ = {
+		E979EBD339E3BDE843053D1C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -228,21 +243,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThemesDemo/Pods-ThemesDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB95C72E63E22727382E1831 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThemesDemo/Pods-ThemesDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -362,7 +362,7 @@
 		};
 		D5C7F7531C3BC9CE008CDDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 211CFEAD13E3E903A1DAE243 /* Pods-ThemesDemo.debug.xcconfig */;
+			baseConfigurationReference = B079031E3685637A94C222F2 /* Pods-ThemesDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ThemesDemo/Info.plist;
@@ -375,7 +375,7 @@
 		};
 		D5C7F7541C3BC9CE008CDDBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE842FAEBA543464E0CAF4A1 /* Pods-ThemesDemo.release.xcconfig */;
+			baseConfigurationReference = 54465F15B8C3BABD3123C6A4 /* Pods-ThemesDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ThemesDemo/Info.plist;
