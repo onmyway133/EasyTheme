@@ -36,7 +36,7 @@ Usually, you have a finite number of colors and fonts in an app. You can have ma
 
 ### Step 1: Create a theme
 
-Create your theme by conforming to `Theme`, which is just a marker protocol. You can declare whatever you like, including nested objects, all depending on your need
+Create your theme by conforming to `Theme`, which is just a marker protocol. You can declare whatever you like, including nested objects, all depending on your need. You can also create many themes as you like
 
 ```swift
 struct MyTheme: Theme {
