@@ -20,7 +20,7 @@ Ever want to support Night mode? Or skin the app differently depending on the se
 
 Many other frameworks encourage you to use hard coded values, like `label.xyz_textColors = [.red, .blue], textField.xyz_fonts = [font1, font2], ...`. This also makes it very hard to change because the usage of index, you need to remember that the 1st index is this theme, the 2nd index is that theme, ... Also, `xyz_textColors` is like trying to replicate the entire `UIKit` APIs, which updates often :scream:
 
-Usually, you have a finite number of colors and fonts in an app. You can have many more but that is not encourage and has design smells. When you have a theme, changing happens in one place. **Themes** is here to help
+**Themes** is here to help. Usually, you have a finite number of colors and fonts in an app. You can have many more but that is not encourage and has design smells. When you have a theme, changing happens in one place. 
 
 ## Features
 
@@ -29,8 +29,6 @@ Usually, you have a finite number of colors and fonts in an app. You can have ma
 - [X] Update existing views
 - [x] Protocol oriented
 - [x] Extensible
-
-**Themes** description.
 
 ## Usage
 
