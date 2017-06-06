@@ -38,7 +38,7 @@ class ListController: UITableViewController {
   let starwarTheme = MyTheme(topImage: UIImage(named: "starwar")!,
                          cellColor: UIColor(hex: "#E5D61D"),
                          backgroundColor: UIColor(hex: "#000000"),
-                         name: "Stawar",
+                         name: "Starwar",
                          titleFont: UIFont(name: "Star Jedi", size: 14)!,
                          subtitleFont: UIFont(name: "Star Jedi", size: 12)!)
 
