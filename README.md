@@ -9,7 +9,10 @@
 
 ![](Screenshots/Banner.png)
 
-![](Screenshots/demo.gif)
+
+<div align = "center">
+<img src="Screenshots/demo.gif" width="" height="400" />
+</div>
 
 ## Story
 
