@@ -3,6 +3,7 @@ import Themes
 import Imaginary
 import On
 import Hue
+import ConfettiView
 
 struct MyTheme: Theme {
   let topImage: UIImage
@@ -41,12 +42,17 @@ class ListController: UITableViewController {
                          titleFont: UIFont(name: "Star Jedi", size: 14)!,
                          subtitleFont: UIFont(name: "Star Jedi", size: 12)!)
 
+  var confettiView: ConfettiView!
+
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = UIColor.white
     tableView.separatorStyle = .none
 
     setupNavigationItems()
+
+    confettiView = ConfettiView()
+    view.addSubview(confettiView)
 
     // default theme
     Manager.theme = dayTheme
@@ -57,7 +63,18 @@ class ListController: UITableViewController {
       $0.navigationController?.navigationBar.setBackgroundImage($1.topImage, for: .default)
       $0.tableView.rowHeight = $1.name == "Unicorn" ? 180 : 120
       $0.tableView.reloadData()
+
+      self.confettiView.startAnimating()
+      DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { 
+        self.confettiView.stopAnimating()
+      })
     }
+  }
+
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+
+    confettiView.frame = view.bounds
   }
 
   func setupNavigationItems() {

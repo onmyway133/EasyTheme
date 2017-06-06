@@ -1,6 +1,7 @@
 PODS:
   - Cache (2.3.0):
     - CryptoSwift
+  - ConfettiView (0.1.7)
   - CryptoSwift (0.6.9)
   - Hue (2.0.1)
   - Imaginary (1.0.2):
@@ -9,6 +10,7 @@ PODS:
   - Themes (1.0.0)
 
 DEPENDENCIES:
+  - ConfettiView
   - Hue
   - Imaginary
   - On (from `https://github.com/onmyway133/On`)
@@ -27,12 +29,13 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Cache: 077e4e799c394ccffc18bb3240f5b55cb9b3cc1b
+  ConfettiView: e70aa9be11d778d2c2778429aad92fa6f5d9c6e7
   CryptoSwift: a22f6ba238e9ce4d26ee7bf45b9ed82e7122d4a0
   Hue: 354caec055fdc9d38b5ef33ca2e7224721843baf
   Imaginary: b4f4c069ad23b53243058a040a531e099aee8a1f
   'On': 1b72343b67154060b3fc792cb48f95a4a5628102
   Themes: 0846b95552a1ac87cb1e47eb0b0efe240fc43b00
 
-PODFILE CHECKSUM: 686145692401b1aa324a5440d94f3a2f949f3267
+PODFILE CHECKSUM: f0a83c430bcae248d7c5aa89a835f7ecc01456d8
 
 COCOAPODS: 1.2.1
