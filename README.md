@@ -115,7 +115,7 @@ override func awakeFromNib() {
 Change the current theme is as easy as assigning a new theme. All happens in real time and very fast
 
 ```swift
-Manager.theme = night
+Manager.theme = nightTheme
 ```
 
 ## Installation
