@@ -12,6 +12,7 @@
 
 <div align = "center">
 <img src="Screenshots/demo.gif" width="" height="400" />
+<img src="Screenshots/weather.gif" width="" height="400" />
 </div>
 
 ## Story
