@@ -1,0 +1,11 @@
+platform :ios, '9.0'
+
+target 'YahooWather' do
+  use_frameworks!
+
+  # Pods for YahooWather
+  pod 'On', :git => 'https://github.com/onmyway133/On'
+  pod 'DayNightSwitch', :git => 'https://github.com/finngaida/DayNightSwitch'
+  pod 'Themes', path: '../../'
+
+end
