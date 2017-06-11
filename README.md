@@ -72,7 +72,7 @@ let unicornTheme = MyTheme(json)
 When app launches, you need to declare 1 theme as the current, it can be loaded from cache
 
 ```swift
-Manager.theme = dayTheme
+ThemeManager.currentTheme = dayTheme
 ```
 
 ### Step 3: React to theme change
@@ -84,7 +84,7 @@ You can do this wherever you like. It is set using the current theme, and whenev
 override func viewDidLoad() {
   super.viewDidLoad()
 
-  theme(MyTheme.self) {
+  use(MyTheme.self) {
     $0.title = $1.name
     $0.tableView.backgroundColor = $1.backgroundColor
     $0.navigationController?.navigationBar.setBackgroundImage($1.topImage, for: .default)
@@ -100,7 +100,7 @@ override func awakeFromNib() {
   imageView.layer.cornerRadius = 5
   imageView.layer.masksToBounds = true
 
-  theme(MyTheme.self) {
+  use(MyTheme.self) {
     $0.titleLabel.font = $1.titleFont
     $0.subtitleLabel.font = $1.subtitleFont
     $0.container.backgroundColor = $1.cellColor
@@ -114,7 +114,7 @@ override func awakeFromNib() {
 Change the current theme is as easy as assigning a new theme. All happens in real time and very fast
 
 ```swift
-Manager.theme = nightTheme
+ThemeManager.currentTheme = nightTheme
 ```
 
 ## Installation

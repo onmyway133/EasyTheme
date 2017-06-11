@@ -28,7 +28,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    Manager.theme = ThemeList.day
+    ThemeManager.currentTheme = ThemeList.day
 
     let dayNightSwitch = DayNightSwitch(frame: CGRect(x: view.bounds.size.width - 120,
                                                       y: view.bounds.size.height - 70,
