@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     view.addSubview(dayNightSwitch)
     dayNightSwitch.on = true
 
-    theme(MyTheme.self) { controller, theme in
+    use(MyTheme.self) { controller, theme in
       UIView.transition(with: controller.imageView,
                         duration: 0.25,
                         options: .transitionCrossDissolve,
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     }
 
     dayNightSwitch.changeAction = { on in
-      Manager.theme = on ? ThemeList.day : ThemeList.night
+      ThemeManager.currentTheme = on ? ThemeList.day : ThemeList.night
     }
   }
 

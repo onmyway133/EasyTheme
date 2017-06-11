@@ -19,8 +19,8 @@ public extension ThemeUser {
   /// - Parameters:
   ///   - type: The type of your own theme
   ///   - apply: the function that gets called with (ThemeUser, Theme)
-  func theme<T: Theme>(_ type: T.Type, apply: @escaping (Self, T) -> Void) {
-    if let theme = Manager.theme as? T {
+  func use<T: Theme>(_ type: T.Type, apply: @escaping (Self, T) -> Void) {
+    if let theme = ThemeManager.currentTheme as? T {
       apply(self, theme)
     }
 

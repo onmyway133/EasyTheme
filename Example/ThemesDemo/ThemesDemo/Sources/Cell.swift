@@ -19,7 +19,7 @@ class Cell: UITableViewCell {
     container.layer.shadowOpacity = 0
     container.layer.shadowOffset = CGSize(width: 1, height: 1)
 
-    theme(MyTheme.self) {
+    use(MyTheme.self) {
       $0.myTitleLabel.font = $1.titleFont
       $0.mySubtitleLabel.font = $1.subtitleFont
       $0.container.backgroundColor = $1.cellColor

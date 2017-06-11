@@ -23,11 +23,11 @@ class ThemeTests: XCTestCase {
     let theme2 = MyTheme(color: .green, font: .systemFont(ofSize: 10), placeholder: "theme 2")
 
     // theme 1
-    Manager.theme = theme1
+    ThemeManager.currentTheme = theme1
 
     let textField = UITextField()
 
-    textField.theme(MyTheme.self) {
+    textField.use(MyTheme.self) {
       $0.textColor = $1.color
       $0.font = $1.font
       $0.placeholder = $1.placeholder
@@ -39,7 +39,7 @@ class ThemeTests: XCTestCase {
     XCTAssertEqual(textField.placeholder, "theme 1")
 
     // theme 2
-    Manager.theme = theme2
+    ThemeManager.currentTheme = theme2
 
     // change to theme 2
     XCTAssertEqual(textField.textColor, UIColor.green)
@@ -48,7 +48,7 @@ class ThemeTests: XCTestCase {
 
     // other theme
 
-    Manager.theme = OtherTheme()
+    ThemeManager.currentTheme = OtherTheme()
 
     // textField is unchanged
     XCTAssertEqual(textField.textColor, UIColor.green)

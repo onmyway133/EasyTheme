@@ -13,8 +13,8 @@ class Handler {
 
   func observe() {
     observer = NotificationCenter.default.addObserver(
-      forName: Manager.themeChangeNotification,
-      object: Manager.self,
+      forName: ThemeManager.themeChangeNotification,
+      object: ThemeManager.self,
       queue: OperationQueue.main,
       using: { [weak self] _ in
         self?.handle()
@@ -26,7 +26,7 @@ class Handler {
       return
     }
 
-    guard let theme = Manager.theme else {
+    guard let theme = ThemeManager.currentTheme else {
       return
     }
 

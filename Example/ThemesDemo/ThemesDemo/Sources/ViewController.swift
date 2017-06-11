@@ -55,9 +55,9 @@ class ListController: UITableViewController {
     view.addSubview(confettiView)
 
     // default theme
-    Manager.theme = dayTheme
+    ThemeManager.currentTheme = dayTheme
 
-    theme(MyTheme.self) {
+    use(MyTheme.self) {
       $0.title = $1.name
       $0.tableView.backgroundColor = $1.backgroundColor
       $0.navigationController?.navigationBar.setBackgroundImage($1.topImage, for: .default)
@@ -87,19 +87,19 @@ class ListController: UITableViewController {
     navigationItem.rightBarButtonItems = [starwar, unicorn]
 
     day.on.tap {
-      Manager.theme = self.dayTheme
+      ThemeManager.currentTheme = self.dayTheme
     }
 
     night.on.tap {
-      Manager.theme = self.nightTheme
+      ThemeManager.currentTheme = self.nightTheme
     }
 
     unicorn.on.tap {
-      Manager.theme = self.unicornTheme
+      ThemeManager.currentTheme = self.unicornTheme
     }
 
     starwar.on.tap {
-      Manager.theme = self.starwarTheme
+      ThemeManager.currentTheme = self.starwarTheme
     }
   }
 
