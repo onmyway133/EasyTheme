@@ -7,6 +7,6 @@ target 'ThemesDemo' do
  pod 'Imaginary'
  pod 'Hue'
  pod 'On', :git => 'https://github.com/onmyway133/On'
- pod 'ConfettiView'
+ pod 'Cheers', :git => 'https://github.com/hyperoslo/Cheers'
 end
 

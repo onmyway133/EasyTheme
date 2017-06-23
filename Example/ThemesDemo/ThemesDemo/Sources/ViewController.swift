@@ -3,7 +3,7 @@ import Themes
 import Imaginary
 import On
 import Hue
-import ConfettiView
+import Cheers
 
 struct MyTheme: Theme {
   let topImage: UIImage
@@ -42,7 +42,7 @@ class ListController: UITableViewController {
                          titleFont: UIFont(name: "Star Jedi", size: 14)!,
                          subtitleFont: UIFont(name: "Star Jedi", size: 12)!)
 
-  var confettiView: ConfettiView!
+  var cheerView: CheerView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -51,8 +51,8 @@ class ListController: UITableViewController {
 
     setupNavigationItems()
 
-    confettiView = ConfettiView()
-    view.addSubview(confettiView)
+    cheerView = CheerView()
+    view.addSubview(cheerView)
 
     // default theme
     ThemeManager.currentTheme = dayTheme
@@ -64,9 +64,9 @@ class ListController: UITableViewController {
       $0.tableView.rowHeight = $1.name == "Unicorn" ? 180 : 120
       $0.tableView.reloadData()
 
-      self.confettiView.startAnimating()
+      self.cheerView.start()
       DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { 
-        self.confettiView.stopAnimating()
+        self.cheerView.stop()
       })
     }
   }
@@ -74,7 +74,7 @@ class ListController: UITableViewController {
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
 
-    confettiView.frame = view.bounds
+    cheerView.frame = view.bounds
   }
 
   func setupNavigationItems() {
