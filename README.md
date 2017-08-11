@@ -70,7 +70,7 @@ let unicornTheme = MyTheme(json)
 When app launches, you need to declare 1 theme as the current, it can be loaded from cache
 
 ```swift
-ThemeManager.currentTheme = dayTheme
+ThemeManager.shared.currentTheme = dayTheme
 ```
 
 ### Step 3: React to theme change
@@ -112,7 +112,7 @@ override func awakeFromNib() {
 Change the current theme is as easy as assigning a new theme. All happens in real time and very fast
 
 ```swift
-ThemeManager.currentTheme = nightTheme
+ThemeManager.shared.currentTheme = nightTheme
 ```
 
 ## Installation
