@@ -10,7 +10,7 @@ public extension ThemeUser {
   ///
   /// Usage
   /// ```
-  /// textField.theme(MyTheme.self) {
+  /// textField.use(MyTheme.self) {
   ///   $0.textColor = $1.mainColor
   ///   $0.font = $1.textFont
   /// }
