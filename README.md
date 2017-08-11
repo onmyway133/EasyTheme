@@ -35,7 +35,7 @@ Many other frameworks encourage you to use hard coded values, like `label.xyz_te
 
 ### Step 1: Create a theme
 
-Create your theme by conforming to `Theme`, which is just a marker protocol. You can declare whatever you like, including nested objects, all depending on your need. You can also create as many themes as you like
+Declare your theme by conforming to `Theme`, which is just a marker protocol. You can declare whatever you like, including nested objects, all depending on your need. You can also create as many themes as you like
 
 ```swift
 struct MyTheme: Theme {
@@ -48,13 +48,11 @@ struct MyTheme: Theme {
 }
 ```
 
-Then list all your themes in a place, for example
+Then create some themes based on your templates
 
 ```swift
-struct MyThemeList {
-  static let dayTheme = MyTheme(topImage: UIImage(named: "day"), cellColor: .white)
-  static let nightTheme = MyTheme(topImage: UIImage(named: "night"), cellColor: .black)
-}
+let dayTheme = MyTheme(topImage: UIImage(named: "day"), cellColor: .white)
+let nightTheme = MyTheme(topImage: UIImage(named: "night"), cellColor: .black)
 ```
 
 The beauty of this is that you can `init` your theme from json, which can be fetched from backend :rocket:
