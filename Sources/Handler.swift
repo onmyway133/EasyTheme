@@ -13,7 +13,7 @@ class Handler {
 
   func observe() {
     observer = NotificationCenter.default.addObserver(
-      forName: ThemeManager.themeChangeNotification,
+      forName: Notification.Name.themeDidChange,
       object: ThemeManager.self,
       queue: OperationQueue.main,
       using: { [weak self] _ in
