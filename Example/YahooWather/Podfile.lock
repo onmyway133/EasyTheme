@@ -1,7 +1,7 @@
 PODS:
   - DayNightSwitch (0.0.3)
   - On (1.0.0)
-  - Themes (1.0.0)
+  - Themes (2.0.0)
 
 DEPENDENCIES:
   - DayNightSwitch (from `https://github.com/finngaida/DayNightSwitch`)
@@ -11,24 +11,24 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   DayNightSwitch:
     :git: https://github.com/finngaida/DayNightSwitch
-  'On':
+  On:
     :git: https://github.com/onmyway133/On
   Themes:
-    :path: "../../"
+    :path: ../../
 
 CHECKOUT OPTIONS:
   DayNightSwitch:
     :commit: e5ee0f105c990c6b0f6342a99bd4879a81f0956b
     :git: https://github.com/finngaida/DayNightSwitch
-  'On':
+  On:
     :commit: c5143a1c69cf1b6a854b005c39ac5b5ca393b969
     :git: https://github.com/onmyway133/On
 
 SPEC CHECKSUMS:
   DayNightSwitch: 9b6877654400a4ca7d63d1dcd28232e60ac32d9e
-  'On': 1b72343b67154060b3fc792cb48f95a4a5628102
-  Themes: 0846b95552a1ac87cb1e47eb0b0efe240fc43b00
+  On: 1b72343b67154060b3fc792cb48f95a4a5628102
+  Themes: d3810257315e54a035691c204aa40a92f2f1085b
 
 PODFILE CHECKSUM: f8dbccd61f461e42d05073b96fff09e28ac8e74b
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

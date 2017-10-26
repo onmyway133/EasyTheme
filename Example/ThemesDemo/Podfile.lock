@@ -1,13 +1,13 @@
 PODS:
-  - Cache (2.3.0):
-    - CryptoSwift
-  - Cheers (1.0.0)
-  - CryptoSwift (0.6.9)
+  - Cache (4.0.4):
+    - SwiftHash (~> 2.0.0)
+  - Cheers (2.0.0)
   - Hue (2.0.1)
-  - Imaginary (1.0.2):
-    - Cache (~> 2.0)
+  - Imaginary (3.0.0):
+    - Cache (~> 4.0)
   - On (1.0.0)
-  - Themes (1.1.0)
+  - SwiftHash (2.0.0)
+  - Themes (2.0.0)
 
 DEPENDENCIES:
   - Cheers (from `https://github.com/hyperoslo/Cheers`)
@@ -19,28 +19,28 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   Cheers:
     :git: https://github.com/hyperoslo/Cheers
-  'On':
+  On:
     :git: https://github.com/onmyway133/On
   Themes:
-    :path: "../../"
+    :path: ../../
 
 CHECKOUT OPTIONS:
   Cheers:
-    :commit: 9857633a9b32b6977e87e27a3132ab201dc4456c
+    :commit: 46fb62ff13f4fa72c36f0b285693a814de002878
     :git: https://github.com/hyperoslo/Cheers
-  'On':
+  On:
     :commit: c5143a1c69cf1b6a854b005c39ac5b5ca393b969
     :git: https://github.com/onmyway133/On
 
 SPEC CHECKSUMS:
-  Cache: 077e4e799c394ccffc18bb3240f5b55cb9b3cc1b
-  Cheers: 8c3525c55bc28108699c901bb57e479eaf7fcecd
-  CryptoSwift: a22f6ba238e9ce4d26ee7bf45b9ed82e7122d4a0
+  Cache: 1b3907ee2f5a457e7cfe9ac0be22dc9207f55a09
+  Cheers: df4128f342df005e53ccbba971a0bdfb5d735f6d
   Hue: 354caec055fdc9d38b5ef33ca2e7224721843baf
-  Imaginary: b4f4c069ad23b53243058a040a531e099aee8a1f
-  'On': 1b72343b67154060b3fc792cb48f95a4a5628102
-  Themes: b696d271b3a2aec42284bee4e6e9a5014404d6d0
+  Imaginary: 2765d293d425cbed3b07fa11642554cbaebe913d
+  On: 1b72343b67154060b3fc792cb48f95a4a5628102
+  SwiftHash: d2e09b13495447178cdfb8e46e54a5c46f15f5a9
+  Themes: d3810257315e54a035691c204aa40a92f2f1085b
 
 PODFILE CHECKSUM: 9114c191d5e5e6b54aae6ce640fefbe6394c8098
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

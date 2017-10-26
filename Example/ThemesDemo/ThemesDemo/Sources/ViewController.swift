@@ -55,7 +55,7 @@ class ListController: UITableViewController {
     view.addSubview(cheerView)
 
     // default theme
-    ThemeManager.currentTheme = dayTheme
+    ThemeManager.shared.currentTheme = dayTheme
 
     use(MyTheme.self) {
       $0.title = $1.name
@@ -87,19 +87,19 @@ class ListController: UITableViewController {
     navigationItem.rightBarButtonItems = [starwar, unicorn]
 
     day.on.tap {
-      ThemeManager.currentTheme = self.dayTheme
+      ThemeManager.shared.currentTheme = self.dayTheme
     }
 
     night.on.tap {
-      ThemeManager.currentTheme = self.nightTheme
+      ThemeManager.shared.currentTheme = self.nightTheme
     }
 
     unicorn.on.tap {
-      ThemeManager.currentTheme = self.unicornTheme
+      ThemeManager.shared.currentTheme = self.unicornTheme
     }
 
     starwar.on.tap {
-      ThemeManager.currentTheme = self.starwarTheme
+      ThemeManager.shared.currentTheme = self.starwarTheme
     }
   }
 
