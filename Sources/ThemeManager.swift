@@ -2,7 +2,9 @@
 import Foundation
 
 /// Manager your current theme
-public class ThemeManager {
+@objc
+@objcMembers
+public class ThemeManager: NSObject {
 
   /// The singleton
   public static let shared = ThemeManager()

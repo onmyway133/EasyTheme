@@ -1,7 +1,9 @@
 import Foundation
 
 /// Managed by ThemeUser to handle theme change notification
-class Handler {
+@objc
+@objcMembers
+class Handler: NSObject {
   var observer: NSObjectProtocol!
 
   weak var host: ThemeUser?
@@ -38,7 +40,10 @@ class Handler {
   }
 
   deinit {
-    NotificationCenter.default.removeObserver(observer)
+
+    if let activeObserver = observer {
+        NotificationCenter.default.removeObserver(activeObserver)
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 import Foundation
 
 /// A marker protocol for theme
-public protocol Theme {
+@objc public protocol Theme {
   
 }
