@@ -46,7 +46,7 @@
 		D22998321ED098A500D3B7BD /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		D22998391ED0A4AD00D3B7BD /* Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 		D254782E1F3DE37300E7DFF3 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
-		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
+		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Themes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Themes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* Themes-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Themes-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -487,7 +487,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -496,7 +496,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Themes-iOS";
 				PRODUCT_NAME = Themes;
 				SKIP_INSTALL = YES;
@@ -510,7 +510,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -519,7 +519,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Themes-iOS";
 				PRODUCT_NAME = Themes;
 				SKIP_INSTALL = YES;
