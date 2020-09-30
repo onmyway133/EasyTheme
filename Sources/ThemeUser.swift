@@ -1,7 +1,7 @@
 import Foundation
 
 /// Anything that wants to use theme
-public protocol ThemeUser: class {}
+@objc public protocol ThemeUser: class {}
 
 public extension ThemeUser {
 
@@ -48,7 +48,7 @@ public extension ThemeUser {
 
 /// MARK: - NSObject 
 
-extension NSObject: ThemeUser {}
+@objc extension NSObject: ThemeUser {}
 
 // MARK: - Associated Object
 
